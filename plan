@@ -1,0 +1,48 @@
+
+
+Shared data structures
+Data structures shared as a service
+Defined via config, loaded and reloadable
+
+{
+    "a_queue": {
+        "type": "queue",
+        "maximum_length": "14", # do not accept new items if at this size
+        "minimum_length": "4",  # do not emit items if at or below this size
+        "sync_interval": "100", # milliseconds to wait in between syncs
+    },
+    "a_dict": {
+    },
+    "a_priority_queue": {
+    },
+    "an_array": {
+    },
+    "a_list": {
+    },
+    "an_heap": {
+    },
+}
+
+Maybe yaml, might give better flexibility in terms of config composition
+
+Phase 0:
+Program that runs
+Can listen for http
+Queue object exists with max and min options
+Single queue object with push and pop functionality for json objects
+
+Phase 1:
+Reads config file, populates queues that way
+Priority queue
+Authentication
+
+Phase 2:
+Command Line Arguments
+Stack
+Encryption
+Key/Value
+
+Phase 3:
+Man page
+Document
+Access Control

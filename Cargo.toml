@@ -1,0 +1,6 @@
+[package]
+name = "dsaaster"
+version = "0.1.0"
+authors = ["nroe"]
+
+[dependencies]
